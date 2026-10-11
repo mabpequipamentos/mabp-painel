@@ -1,0 +1,40 @@
+{
+  "ativo": true,
+  "vagas": {
+    "terca": [
+      "10:00",
+      "18:00"
+    ],
+    "quarta": [
+      "10:00",
+      "18:00"
+    ],
+    "quinta": [
+      "10:00",
+      "18:00"
+    ],
+    "sexta": [
+      "10:00",
+      "18:00"
+    ],
+    "sabado": [
+      "10:00",
+      "14:00"
+    ]
+  },
+  "posts_por_semana": 10,
+  "semanas_para_repetir_foto": 12,
+  "planilha_historico_id": "",
+  "empresa": {
+    "nome": "MABP Locações",
+    "whatsapp": "(22) 99922-5666",
+    "email": "mabplocacaoeservicos@gmail.com",
+    "cidade": "Nova Friburgo · RJ",
+    "instagram": ""
+  },
+  "posts_com_foto_por_semana": 5,
+  "reels_por_semana": 1,
+  "drive_pasta_id": "",
+  "drive_pasta_url": "",
+  "painel_repo": ""
+}

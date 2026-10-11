@@ -1,0 +1,39 @@
+{
+ "atualizado": "2026-10-11 02:56",
+ "categorias": {
+  "Caminhão caçamba": {
+   "total": 2,
+   "nunca_usadas": 2,
+   "disponiveis": 2
+  },
+  "Escavadeira": {
+   "total": 2,
+   "nunca_usadas": 2,
+   "disponiveis": 2
+  },
+  "Motoniveladora": {
+   "total": 2,
+   "nunca_usadas": 2,
+   "disponiveis": 2
+  },
+  "Obras e serviços": {
+   "total": 2,
+   "nunca_usadas": 2,
+   "disponiveis": 2
+  },
+  "Retroescavadeira": {
+   "total": 2,
+   "nunca_usadas": 2,
+   "disponiveis": 2
+  },
+  "Trator de pneu": {
+   "total": 2,
+   "nunca_usadas": 2,
+   "disponiveis": 2
+  }
+ },
+ "videos": {
+  "total": 0,
+  "nunca_usados": 0
+ }
+}

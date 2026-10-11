@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MABP Posts</title>
+  <meta name="description" content="Aprovação e agendamento dos posts do Instagram da MABP Locações">
+  <meta name="theme-color" content="#2B2D2E">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="MABP Posts">
+  <link rel="apple-touch-icon" href="icones/apple-touch-icon.png">
+  <link rel="icon" href="icones/icone-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="marca"><img src="icones/icone-192.png" alt=""><span>MABP <b>Posts</b></span></div>
+    <button class="icone-btn" id="btn-atualizar" aria-label="Atualizar">
+      <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 4v5h-5"/></svg>
+    </button>
+  </header>
+  <div id="faixa-demo" class="faixa-demo" hidden>Modo demonstração · nada é publicado</div>
+  <main id="tela"></main>
+  <nav class="abas" id="abas" hidden>
+    <button data-aba="inicio" class="ativa"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9h-6v-6H9v6H3z"/></svg>Início</button>
+    <button data-aba="semana"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Semana<i id="contador" hidden></i></button>
+    <button data-aba="fotos"><svg viewBox="0 0 24 24"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg>Fotos</button>
+    <button data-aba="ajustes"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>Ajustes</button>
+  </nav>
+  <div id="folha" class="folha" hidden></div>
+  <div id="aviso" class="aviso" role="status" hidden></div>
+  <script src="agenda.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+[
+ {
+  "id": "2026-10-05-01",
+  "semana": "2026-10-05",
+  "ordem": 1,
+  "tipo": "post",
+  "modelo": "A",
+  "tema": "Retroescavadeira",
+  "categorias": [
+   "Retroescavadeira",
+   "Obras e serviços"
+  ],
+  "arte": {
+   "titulo": "VERSÁTIL PARA SUA *OBRA*",
+   "rotulo": "RETROESCAVADEIRA",
+   "itens": [
+    "Valas, escavação e carga",
+    "Por hora ou por diária",
+    "Levamos e buscamos"
+   ]
+  },
+  "gancho": "Uma máquina, vários serviços: a retroescavadeira resolve muita coisa no canteiro.",
+  "legenda": "Uma máquina, vários serviços: a retroescavadeira resolve muita coisa no canteiro.\n\nEla abre valas, escava, carrega material e ajuda na limpeza de lotes, tudo com o mesmo equipamento.\n\nNa MABP Locações você aluga com ou sem operador, por hora ou por diária, e nós levamos e buscamos a máquina.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. 🚜\n\n#MABPLocacoes #retroescavadeira #locacaodemaquinas #obra #construcaocivil #NovaFriburgo",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#retroescavadeira",
+   "#locacaodemaquinas",
+   "#obra",
+   "#construcaocivil",
+   "#NovaFriburgo"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [
+   {
+    "origem": "drive",
+    "id": "Fotos\\Retroescavadeira\\foto1.jpg",
+    "nome": "foto1.jpg",
+    "categoria": "Retroescavadeira",
+    "credito": "",
+    "url": ""
+   }
+  ],
+  "arquivo": "2026-10-05-01-retroescavadeira-v2.jpg"
+ },
+ {
+  "id": "2026-10-05-02",
+  "semana": "2026-10-05",
+  "ordem": 2,
+  "tipo": "post",
+  "modelo": "B",
+  "tema": "Limpeza de lotes",
+  "categorias": [],
+  "arte": {
+   "titulo": "LOTE LIMPO, OBRA *PRONTA*",
+   "subtitulo": "Máquina na hora certa para limpar seu terreno.",
+   "botao": "SOLICITE SEU ORÇAMENTO"
+  },
+  "gancho": "Antes de construir, o terreno precisa estar limpo e pronto para receber a obra.",
+  "legenda": "Antes de construir, o terreno precisa estar limpo e pronto para receber a obra.\n\nA limpeza de lote remove vegetação, entulho e material solto, deixando a área livre para medição, nivelamento e fundação.\n\nA MABP Locações tem retroescavadeira, trator de pneu e caminhão caçamba para essa etapa, com ou sem operador.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. ✅\n\n#MABPLocacoes #locacaodeequipamentos #terraplenagem #canteirodeobras #obra #RegiaoSerrana",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#locacaodeequipamentos",
+   "#terraplenagem",
+   "#canteirodeobras",
+   "#obra",
+   "#RegiaoSerrana"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [],
+  "arquivo": "2026-10-05-02-limpeza-de-lotes.jpg"
+ },
+ {
+  "id": "2026-10-05-03",
+  "semana": "2026-10-05",
+  "ordem": 3,
+  "tipo": "post",
+  "modelo": "A",
+  "tema": "Abertura de ruas e estradas",
+  "categorias": [
+   "Motoniveladora",
+   "Escavadeira",
+   "Obras e serviços"
+  ],
+  "arte": {
+   "titulo": "ESTRADA ABERTA COM *FORÇA*",
+   "rotulo": "ABERTURA DE RUAS",
+   "itens": [
+    "Escavadeira e motoniveladora",
+    "Com ou sem operador",
+    "Atendemos todo o RJ"
+   ]
+  },
+  "gancho": "Abrir uma rua ou estrada de terra exige a máquina certa em cada etapa.",
+  "legenda": "Abrir uma rua ou estrada de terra exige a máquina certa em cada etapa.\n\nA escavadeira faz o corte e a movimentação de terra. A motoniveladora acerta o leito e deixa a pista regular. O caminhão caçamba leva e traz o material.\n\nA MABP Locações aluga esses equipamentos com ou sem operador, em todo o Estado do Rio de Janeiro.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. 🏗️\n\n#MABPLocacoes #infraestrutura #motoniveladora #escavadeira #terraplenagem #RiodeJaneiro",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#infraestrutura",
+   "#motoniveladora",
+   "#escavadeira",
+   "#terraplenagem",
+   "#RiodeJaneiro"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [
+   {
+    "origem": "drive",
+    "id": "Fotos\\Motoniveladora\\foto1.jpg",
+    "nome": "foto1.jpg",
+    "categoria": "Motoniveladora",
+    "credito": "",
+    "url": ""
+   }
+  ],
+  "arquivo": "2026-10-05-03-abertura-de-ruas-e-estradas.jpg"
+ },
+ {
+  "id": "2026-10-05-04",
+  "semana": "2026-10-05",
+  "ordem": 4,
+  "tipo": "post",
+  "modelo": "C",
+  "tema": "Qual máquina usar em cada serviço",
+  "categorias": [],
+  "arte": {
+   "titulo": "QUAL MÁQUINA PARA CADA *SERVIÇO*?",
+   "itens": [
+    "Escavadeira: escavação e aterros.",
+    "Motoniveladora: nivelar ruas e estradas.",
+    "Caminhão caçamba: transportar material."
+   ]
+  },
+  "gancho": "Escolher a máquina certa evita retrabalho e deixa a obra andar.",
+  "legenda": "Escolher a máquina certa evita retrabalho e deixa a obra andar.\n\nPara escavação e aterros, a escavadeira é a mais indicada. Para nivelar ruas, estradas e grandes áreas, a motoniveladora. Para levar e trazer terra e entulho, o caminhão caçamba.\n\nFicou na dúvida sobre o seu caso? A equipe da MABP Locações ajuda você a escolher.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666.\n\n#MABPLocacoes #maquinaspesadas #engenhariacivil #locacaodemaquinas #obra #NovaFriburgo",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#maquinaspesadas",
+   "#engenhariacivil",
+   "#locacaodemaquinas",
+   "#obra",
+   "#NovaFriburgo"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [],
+  "arquivo": "2026-10-05-04-qual-maquina-usar-em-cada-serv.jpg"
+ },
+ {
+  "id": "2026-10-05-05",
+  "semana": "2026-10-05",
+  "ordem": 5,
+  "tipo": "reel",
+  "modelo": "R",
+  "tema": "Escavação e aterros",
+  "categorias": [
+   "Escavadeira",
+   "Retroescavadeira",
+   "Obras e serviços"
+  ],
+  "arte": {
+   "titulo": "ESCAVAÇÃO E ATERRO SEM *PARAR*"
+  },
+  "gancho": "Escavação e aterro com a máquina certa, do início ao fim da obra.",
+  "legenda": "Escavação e aterro com a máquina certa, do início ao fim da obra.\n\nA MABP Locações aluga escavadeira, retroescavadeira e caminhão caçamba, com ou sem operador, por hora ou por diária.\n\nLevamos e buscamos a máquina na sua obra, em todo o Estado do RJ.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. 🚜\n\n#MABPLocacoes #escavadeira #terraplenagem #construcaocivil #RegiaoSerrana",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#escavadeira",
+   "#terraplenagem",
+   "#construcaocivil",
+   "#RegiaoSerrana"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "arquivo": "2026-10-05-05-escavacao-e-aterros.mp4",
+  "capa": "2026-10-05-05-escavacao-e-aterros-capa.jpg",
+  "midias": [
+   {
+    "origem": "drive",
+    "id": "Fotos\\Escavadeira\\foto1.jpg",
+    "nome": "foto1.jpg",
+    "categoria": "Escavadeira",
+    "credito": "",
+    "url": ""
+   },
+   {
+    "origem": "drive",
+    "id": "Fotos\\Escavadeira\\foto2.jpg",
+    "nome": "foto2.jpg",
+    "categoria": "Escavadeira",
+    "credito": "",
+    "url": ""
+   },
+   {
+    "origem": "drive",
+    "id": "Fotos\\Retroescavadeira\\foto2.jpg",
+    "nome": "foto2.jpg",
+    "categoria": "Retroescavadeira",
+    "credito": "",
+    "url": ""
+   }
+  ]
+ },
+ {
+  "id": "2026-10-05-06",
+  "semana": "2026-10-05",
+  "ordem": 6,
+  "tipo": "post",
+  "modelo": "A",
+  "tema": "Escavadeira",
+  "categorias": [
+   "Escavadeira",
+   "Obras e serviços"
+  ],
+  "arte": {
+   "titulo": "ESCAVAÇÃO NO *RITMO* CERTO",
+   "rotulo": "ESCAVADEIRA",
+   "itens": [
+    "Escavação e aterros",
+    "Por hora ou por diária",
+    "Leva e busca incluído"
+   ]
+  },
+  "gancho": "Escavação de valas, fundações e aterros pede uma escavadeira no canteiro.",
+  "legenda": "Escavação de valas, fundações e aterros pede uma escavadeira no canteiro.\n\nCom alcance e força para movimentar terra, a escavadeira acelera as etapas iniciais da obra.\n\nNa MABP Locações você aluga com ou sem operador, por hora ou por diária, e a máquina chega e sai da obra com a gente.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. 🏗️\n\n#MABPLocacoes #escavadeira #escavadeirahidraulica #canteirodeobras #locacaodemaquinas #RJ",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#escavadeira",
+   "#escavadeirahidraulica",
+   "#canteirodeobras",
+   "#locacaodemaquinas",
+   "#RJ"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [
+   {
+    "origem": "drive",
+    "id": "Fotos\\Obras e serviços\\foto1.jpg",
+    "nome": "foto1.jpg",
+    "categoria": "Obras e serviços",
+    "credito": "",
+    "url": ""
+   }
+  ],
+  "arquivo": "2026-10-05-06-escavadeira.jpg"
+ },
+ {
+  "id": "2026-10-05-07",
+  "semana": "2026-10-05",
+  "ordem": 7,
+  "tipo": "post",
+  "modelo": "C",
+  "tema": "Com ou sem operador: quando vale cada opção",
+  "categorias": [],
+  "arte": {
+   "titulo": "COM OU SEM *OPERADOR*?",
+   "itens": [
+    "Sem operador: sua equipe já opera.",
+    "Com operador: profissional da MABP.",
+    "Em dúvida? A gente orienta."
+   ]
+  },
+  "gancho": "Com ou sem operador: entenda quando vale cada opção na sua obra.",
+  "legenda": "Com ou sem operador: entenda quando vale cada opção na sua obra.\n\nSe a sua equipe já tem um operador habilitado e experiente, a locação sem operador pode atender bem.\n\nSe não tem, a locação com operador garante que a máquina trabalhe com quem conhece o equipamento.\n\nFale com a MABP Locações e escolha a melhor forma para o seu serviço. Solicite seu orçamento pelo WhatsApp (22) 99922-5666.\n\n#MABPLocacoes #locacaodeequipamentos #obra #engenhariacivil #maquinaspesadas #NovaFriburgo",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#locacaodeequipamentos",
+   "#obra",
+   "#engenhariacivil",
+   "#maquinaspesadas",
+   "#NovaFriburgo"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [],
+  "arquivo": "2026-10-05-07-com-ou-sem-operador-quando-val.jpg"
+ },
+ {
+  "id": "2026-10-05-08",
+  "semana": "2026-10-05",
+  "ordem": 8,
+  "tipo": "post",
+  "modelo": "A",
+  "tema": "Nivelamento de terrenos",
+  "categorias": [
+   "Motoniveladora",
+   "Trator de pneu",
+   "Obras e serviços"
+  ],
+  "arte": {
+   "titulo": "TERRENO NIVELADO, BASE *FIRME*",
+   "rotulo": "NIVELAMENTO DE TERRENOS",
+   "itens": [
+    "Motoniveladora e trator de pneu",
+    "Com ou sem operador",
+    "Por hora ou por diária"
+   ]
+  },
+  "gancho": "Um terreno bem nivelado é o primeiro passo para uma obra sem surpresas.",
+  "legenda": "Um terreno bem nivelado é o primeiro passo para uma obra sem surpresas.\n\nO nivelamento corrige desníveis, prepara a área para fundação, pátios e acessos e facilita a drenagem.\n\nA MABP Locações aluga motoniveladora e trator de pneu para essa etapa, e leva e busca a máquina na obra.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. ⚙️\n\n#MABPLocacoes #motoniveladora #tratordepneu #terraplenagem #construcaocivil #RegiaoSerrana",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#motoniveladora",
+   "#tratordepneu",
+   "#terraplenagem",
+   "#construcaocivil",
+   "#RegiaoSerrana"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [
+   {
+    "origem": "drive",
+    "id": "Fotos\\Trator de pneu\\foto1.jpg",
+    "nome": "foto1.jpg",
+    "categoria": "Trator de pneu",
+    "credito": "",
+    "url": ""
+   }
+  ],
+  "arquivo": "2026-10-05-08-nivelamento-de-terrenos.jpg"
+ },
+ {
+  "id": "2026-10-05-09",
+  "semana": "2026-10-05",
+  "ordem": 9,
+  "tipo": "post",
+  "modelo": "A",
+  "tema": "Caminhão caçamba",
+  "categorias": [
+   "Caminhão caçamba",
+   "Obras e serviços"
+  ],
+  "arte": {
+   "titulo": "MATERIAL NO LUGAR *CERTO*",
+   "rotulo": "CAMINHÃO CAÇAMBA",
+   "itens": [
+    "Terra, entulho e aterro",
+    "Com ou sem operador",
+    "Todo o Estado do RJ"
+   ]
+  },
+  "gancho": "Terra, entulho e material de aterro precisam chegar e sair da obra no tempo certo.",
+  "legenda": "Terra, entulho e material de aterro precisam chegar e sair da obra no tempo certo.\n\nO caminhão caçamba faz esse transporte e mantém o canteiro organizado enquanto as outras máquinas trabalham.\n\nNa MABP Locações você aluga com ou sem operador, por hora ou por diária, em todo o Estado do Rio de Janeiro.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. 🚜\n\n#MABPLocacoes #caminhaocacamba #canteirodeobras #locacaodemaquinas #obra #RiodeJaneiro",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#caminhaocacamba",
+   "#canteirodeobras",
+   "#locacaodemaquinas",
+   "#obra",
+   "#RiodeJaneiro"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [
+   {
+    "origem": "drive",
+    "id": "Fotos\\Caminhão caçamba\\foto1.jpg",
+    "nome": "foto1.jpg",
+    "categoria": "Caminhão caçamba",
+    "credito": "",
+    "url": ""
+   }
+  ],
+  "arquivo": "2026-10-05-09-caminhao-cacamba.jpg"
+ },
+ {
+  "id": "2026-10-05-10",
+  "semana": "2026-10-05",
+  "ordem": 10,
+  "tipo": "post",
+  "modelo": "E",
+  "tema": "Contato completo",
+  "categorias": [],
+  "arte": {
+   "titulo": "SUA OBRA NÃO PODE *PARAR*"
+  },
+  "gancho": "Cada dia de obra parada custa caro. Por isso, a máquina precisa estar lá quando você precisa.",
+  "legenda": "Cada dia de obra parada custa caro. Por isso, a máquina precisa estar lá quando você precisa.\n\nA MABP Locações aluga retroescavadeira, escavadeira, caminhão caçamba, motoniveladora e trator de pneu, com ou sem operador.\n\nLevamos e buscamos a máquina na sua obra, em todo o Estado do RJ.\n\nSolicite seu orçamento pelo WhatsApp (22) 99922-5666. 👷\n\n#MABPLocacoes #construcaocivil #maquinaspesadas #locacaodeequipamentos #obra #NovaFriburgo",
+  "hashtags": [
+   "#MABPLocacoes",
+   "#construcaocivil",
+   "#maquinaspesadas",
+   "#locacaodeequipamentos",
+   "#obra",
+   "#NovaFriburgo"
+  ],
+  "status": "rascunho",
+  "data_hora": null,
+  "feedback": "",
+  "versao": 1,
+  "historico": [],
+  "criado_em": "2026-10-11 02:55",
+  "midias": [],
+  "arquivo": "2026-10-05-10-contato-completo.jpg"
+ }
+]
