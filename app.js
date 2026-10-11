@@ -409,6 +409,7 @@ function cartaoPost(p) {
   const notas = [];
   if (p.status === "ajuste") notas.push(h("div", { class: "nota" }, h("b", {}, "Refazendo com o seu pedido: "), p.feedback, h("br"), h("span", { class: "sub" }, "Volta para aprovação em alguns minutos.")));
   if (p.status === "erro") notas.push(h("div", { class: "nota" }, h("b", {}, "Não publicou: "), p.erro || "erro desconhecido"));
+  else if (p.status === "rascunho" && p.erro) notas.push(h("div", { class: "nota" }, h("b", {}, "Ajuste não feito: "), p.erro));
   if ((p.midias || []).some((m) => ["pexels", "pixabay"].includes(m.origem) || m.ilustrativa)) notas.push(h("div", { class: "nota sub" }, "Imagem ilustrativa (banco de imagens livre), não é foto da frota."));
 
   return h("article", { class: "cartao post" }, midia,
