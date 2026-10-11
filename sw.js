@@ -1,5 +1,5 @@
 // Guarda os arquivos do app para abrir rápido; dados sempre vêm da internet (GitHub).
-const VERSAO = "mabp-v5";
+const VERSAO = "mabp-v6";
 const ARQUIVOS = ["./", "index.html", "estilo.css", "app.js", "agenda.js", "manifest.webmanifest",
   "icones/apple-touch-icon.png", "icones/icone-192.png", "icones/icone-512.png"];
 

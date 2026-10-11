@@ -3,6 +3,10 @@
 // (guardado só neste aparelho). Modo demonstração usa dados locais da pasta demo/.
 "use strict";
 
+// Versão deste app = o ?v= com que o index.html carregou este arquivo. Publicar versão nova:
+// trocar o ?v= no index.html e o mesmo número em versao.json.
+const APP_VERSAO = new URL(document.currentScript.src).searchParams.get("v") || "0";
+
 const ARMAZ = { token: "mabp_token", repo: "mabp_repo", demo: "mabp_demo" };
 const DIAS = ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"];
 const NOME_STATUS = { rascunho: "Para aprovar", agendado: "Aprovado", publicado: "Publicado", ajuste: "Refazendo",
@@ -530,12 +534,32 @@ function telaAjustes() {
       h("li", {}, "No horário marcado, o robô publica sozinho no Instagram."))));
 }
 
+// ---------- atualização automática ----------
+async function verificarAtualizacao() {
+  try {
+    const r = await fetch(`versao.json?t=${Date.now()}`, { cache: "no-store" });
+    const { versao } = await r.json();
+    if (!versao || versao === APP_VERSAO) return;
+    let jaTentou = null;
+    try { jaTentou = sessionStorage.getItem("mabp_atualizou"); } catch {}
+    if (jaTentou === versao) return; // não recarrega em laço
+    try { sessionStorage.setItem("mabp_atualizou", versao); } catch {}
+    if ("caches" in window) for (const k of await caches.keys()) await caches.delete(k);
+    const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration() : null;
+    if (reg) await reg.update().catch(() => {});
+    location.reload();
+  } catch {}
+}
+
 // ---------- início ----------
 document.querySelectorAll("#abas button").forEach((b) => b.addEventListener("click", () => irPara(b.dataset.aba)));
 $("#btn-atualizar").addEventListener("click", () => { midiaCache.clear(); carregarTudo(); });
 document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible" && (modoDemo() || ler(ARMAZ.token))) carregarTudo();
+  if (document.visibilityState !== "visible") return;
+  verificarAtualizacao();
+  if (modoDemo() || ler(ARMAZ.token)) carregarTudo();
 });
+verificarAtualizacao();
 if ("serviceWorker" in navigator && location.protocol === "https:") navigator.serviceWorker.register("sw.js").catch(() => {});
 
 if (modoDemo() || ler(ARMAZ.token)) carregarTudo().then(() => { if (estado.posts.some((p) => p.status === "ajuste")) vigiarAjustes(); });
