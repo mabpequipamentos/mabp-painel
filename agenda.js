@@ -41,7 +41,7 @@
     const daSemana = posts.filter((p) => p.semana === semana);
     const ocupadas = new Set(daSemana.filter((p) => p.status === "publicado").map((p) => p.data_hora));
     const aprovados = daSemana
-      .filter((p) => p.status === "agendado")
+      .filter((p) => p.status === "agendado" && !p.imediato)
       .sort((a, b) => (a.ordem || 0) - (b.ordem || 0) || (a.id < b.id ? -1 : a.id > b.id ? 1 : 0));
     const k = aprovados.length;
     if (!k) return {};

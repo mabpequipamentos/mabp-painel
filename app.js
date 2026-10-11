@@ -194,6 +194,7 @@ function redistribuir(posts) {
   const horarios = Agenda.distribuir(posts, semana, estado.config.vagas || {}, Agenda.agoraBrasilia());
   return posts.map((p) => {
     if (p.semana !== semana) return p;
+    if (p.imediato) return p; // posts especiais (ex.: fixados) não entram na agenda da semana
     if (p.status === "agendado") return { ...p, data_hora: horarios[p.id] };
     if (p.status !== "publicado" && p.status !== "erro") return { ...p, data_hora: null };
     return p;
@@ -214,9 +215,21 @@ async function mudarPost(id, mudanca, mensagem, msgOk) {
   }
 }
 
-const aprovar = (p) => mudarPost(p.id, () => ({ status: "agendado" }), `Aprova ${p.id}`,
-  (n) => `Aprovado! Sai ${fmtQuando(n.data_hora)}.`);
-const desaprovar = (p) => mudarPost(p.id, () => ({ status: "rascunho" }), `Volta ${p.id} para aprovação`, "Voltou para aprovação.");
+async function aprovar(p) {
+  if (!p.imediato) {
+    return mudarPost(p.id, () => ({ status: "agendado" }), `Aprova ${p.id}`, (n) => `Aprovado! Sai ${fmtQuando(n.data_hora)}.`);
+  }
+  // post especial: publica já, sem esperar a agenda
+  const ok = await mudarPost(p.id, () => ({ status: "agendado", data_hora: Agenda.agoraBrasilia() }), `Aprova e publica ${p.id}`);
+  if (!ok) return;
+  try {
+    await fonte().disparar("publicar.yml");
+    aviso("Aprovado! Publicando agora no Instagram (1 a 3 minutos).", 6000);
+  } catch (e) {
+    aviso(`Aprovado. Vai sair na próxima rodada do robô (até 1 hora). ${e.message}`, 7000);
+  }
+}
+const desaprovar = (p) => mudarPost(p.id, () => ({ status: "rascunho", ...(p.imediato ? { data_hora: null } : {}) }), `Volta ${p.id} para aprovação`, "Voltou para aprovação.");
 const descartar = (p) => mudarPost(p.id, (x) => ({ status: "descartado", historico: [...(x.historico || []), { evento: "descartado pelo dono" }] }),
   `Descarta ${p.id}`, "Post descartado. A semana foi reorganizada com os aprovados.");
 const tentarDeNovo = (p) => mudarPost(p.id, () => ({ status: "agendado", erro: "" }), `Tenta de novo ${p.id}`,
@@ -407,6 +420,7 @@ function cartaoPost(p) {
   }
 
   const notas = [];
+  if (p.nota) notas.push(h("div", { class: "nota" }, h("b", {}, p.nota), p.status === "publicado" ? " · no Instagram: 3 pontinhos do post → Fixar no perfil." : ""));
   if (p.status === "ajuste") notas.push(h("div", { class: "nota" }, h("b", {}, "Refazendo com o seu pedido: "), p.feedback, h("br"), h("span", { class: "sub" }, "Volta para aprovação em alguns minutos.")));
   if (p.status === "erro") notas.push(h("div", { class: "nota" }, h("b", {}, "Não publicou: "), p.erro || "erro desconhecido"));
   else if (p.status === "rascunho" && p.erro) notas.push(h("div", { class: "nota" }, h("b", {}, "Ajuste não feito: "), p.erro));
@@ -416,7 +430,8 @@ function cartaoPost(p) {
     h("div", { class: "corpo" },
       h("div", { class: "meta" },
         h("span", { class: `selo s-${p.status}` }, NOME_STATUS[p.status] || p.status),
-        h("span", { class: "quando" }, p.status === "publicado" ? `Publicado ${fmtQuando(p.publicado_em || p.data_hora)}` : fmtQuando(p.data_hora)),
+        h("span", { class: "quando" }, p.status === "publicado" ? `Publicado ${fmtQuando(p.publicado_em || p.data_hora)}`
+          : p.imediato && p.status === "rascunho" ? "Publica assim que aprovar" : fmtQuando(p.data_hora)),
         h("span", {}, `${NOME_MODELO[p.modelo] || ""} · ${p.tema}`),
         p.versao > 1 && h("span", {}, `versão ${p.versao}`)),
       legenda, verMais, notas, acoes));
