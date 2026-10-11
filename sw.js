@@ -1,5 +1,5 @@
 // Guarda os arquivos do app para abrir rápido; dados sempre vêm da internet (GitHub).
-const VERSAO = "mabp-v2";
+const VERSAO = "mabp-v5";
 const ARQUIVOS = ["./", "index.html", "estilo.css", "app.js", "agenda.js", "manifest.webmanifest",
   "icones/apple-touch-icon.png", "icones/icone-192.png", "icones/icone-512.png"];
 
@@ -14,7 +14,7 @@ self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== "GET" || url.origin !== location.origin || url.pathname.includes("/midia/")) return;
   // rede primeiro (pega atualizações do app), cache se estiver sem internet
-  e.respondWith(fetch(e.request).then((r) => {
+  e.respondWith(fetch(e.request, { cache: "no-cache" }).then((r) => {
     const copia = r.clone();
     caches.open(VERSAO).then((c) => c.put(e.request, copia));
     return r;
