@@ -428,7 +428,7 @@ async function carregarMidia(caixa, caminho, capa, reel) {
     const url = await midiaCache.get(chave);
     let el;
     if (reel) {
-      el = h("video", { src: url, controls: true, playsinline: true, muted: true, loop: true, preload: "metadata" });
+      el = h("video", { src: url, controls: true, playsinline: true, loop: true, preload: "metadata" });
       if (capa) fonte().midia(capa).then((u) => (el.poster = u)).catch(() => {});
     } else {
       el = h("img", { src: url, alt: "Arte do post", loading: "lazy" });
@@ -478,13 +478,15 @@ function telaFotos() {
         h("div", { style: "flex:1" }, h("b", {}, nome), h("div", { class: "barra" }, h("div", { style: `width:${c.total ? Math.round((100 * c.disponiveis) / c.total) : 0}%` }))),
         h("div", { style: "text-align:right;min-width:90px" }, h("b", {}, `${c.disponiveis}`), h("span", { class: "sub" }, ` de ${c.total}`))))
       : h("div", { class: "sub" }, "Sem informações ainda. Aparecem depois da primeira geração."),
-      f && h("div", { class: "categoria" }, h("b", {}, "Vídeos (para o reel)"), h("span", {}, `${f.videos?.total || 0} na pasta`))),
+      f && h("div", { class: "categoria" }, h("b", {}, "Vídeos (para o reel)"), h("span", {}, `${f.videos?.total || 0} na pasta`)),
+      f && h("div", { class: "categoria" }, h("b", {}, "Trilhas instrumentais"), h("span", { class: f.trilhas?.total ? "" : "falha" }, f.trilhas?.total ? `${f.trilhas.total} na pasta` : "pasta vazia: reel sai sem som"))),
     h("h2", {}, "Dicas para as fotos"),
     h("div", { class: "cartao" }, h("ul", { class: "passos" },
       h("li", {}, "Coloque cada foto na subpasta do equipamento (ou em \"Obras e serviços\")."),
-      h("li", {}, "Pessoas sempre com capacete, colete e botina; sem rostos de clientes e sem placas legíveis."),
+      h("li", {}, "Pode ter pessoas e a marca do fabricante; evite placas legíveis e nome de outras empresas."),
       h("li", {}, "Máquina inteira ou braço/caçamba em ação, de dia, sem filtro."),
-      h("li", {}, "Vídeos curtos (5 a 20 s, celular em pé) vão na pasta \"Vídeos\" e viram reels."))),
+      h("li", {}, "Vídeos curtos (5 a 20 s, celular em pé) vão na pasta \"Vídeos\" e viram reels."),
+      h("li", {}, "Músicas instrumentais livres de direitos (Pixabay Music, Biblioteca de Áudio do YouTube) vão na pasta \"Trilhas\": o robô alterna entre elas no fundo do reel."))),
     f && h("p", { class: "sub", style: "margin-top:10px" }, `Atualizado em ${f.atualizado}`));
 }
 
